@@ -24,7 +24,7 @@ h4 {
 .jumbotron {
   background-color: #fff;
   background-position: center;
-  background-image: url("../../assets/father1_70.png");
+  background-image: asset-url("../../assets/father1_70.png");
   background-size: cover;
   font-size: 120px;
   font-family: Montserrat;
