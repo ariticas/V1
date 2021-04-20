@@ -22,29 +22,32 @@ h4 {
   margin-bottom: 30px;
 }
 .jumbotron {
-  background-color: #fff;
-  background-position: center;
-  background-image: url("../../assets/father1_70.png");
-  background-size: cover;
-  font-size: 120px;
+
+ background-position: center center;
+
+  background-image: url("fs1_50.png");
+  font-size: 100px;
   font-family: Montserrat;
-  padding: 5px 25px;
-  height: 1000px;
+  margin-top:100px;
   color: #fff;
+  background-repeat: no-repeat;
+  background-size:  cover;
+  height: 700px;
+  
   }
   
   div.transbox {
 margin: 30px;
-background-color: #fff;
+background-color:  ;
 border: none;
-opacity: .5;
+
 }
 
 div.transbox p {
 margin: 5%;
 font-weight: bold;
-color: black;
-
+color: white;
+font-size: 100px;
 }
 
 
@@ -140,8 +143,8 @@ color: black;
   letter-spacing: 4px;
   border-radius: 0;
   font-family: Montserrat, sans-serif;
-  height: 80px;
-  padding-top:20px;
+  height: 100px;
+  padding-top:25px;
 }
 .navbar li a, .navbar{
   color: black !important;
