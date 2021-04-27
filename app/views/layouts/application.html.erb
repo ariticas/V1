@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Theme Made By www.w3schools.com -->
-  <title>Direct Family Solutions</title>
+  <title>Bootstrap Theme Company Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,45 +12,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   
   
-    <!-- Rails -->
-
-    <%= csrf_meta_tags %>
+     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all',
                                            'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
- 
- <!--flowtype.js -->
- 
- <script src="//code.jquery.com/jquery-latest.min.js"></script>
-<script src="flowtype.js"></script>
-  
 </head>
 
 
-
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
- <nav class="navbar nav navbar-expand navbar-default navbar-fixed-top ">
-  <div class="top-bar">
-      Call Us -  1866-420-2020
-  </div>
-   <div class="container"style="background-color:#f8f5f1;padding-left:30px;" >
-     <div class="navbar-header">
-       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        
-       </button>
-    
 
-<%= link_to image_tag("d10.png", alt: "Rails logo", width: "150",class: 'navbar-brand navbar-image' ),
-                        "https://rubyonrails.org/" %>
-</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right" >
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
         <li><a href="#portfolio">PORTFOLIO</a></li>
@@ -60,21 +43,17 @@
     </div>
   </div>
 </nav>
-   
 
-
-  
-<div class="jumbotron jumbotron-image text-right">
-  <div >Direct Family Solutions</div>
-  </div>
+<div class="jumbotron text-center">
+  <h1>Company</h1>
+  <p>We specialize in blablabla</p>
  
-
-  
-
+</div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid " style="color:blue">
-  <div class="row">   <div class="col-sm-8">
+<div id="about" class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
       <h2>About Company Page</h2><br>
       <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>

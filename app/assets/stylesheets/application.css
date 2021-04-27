@@ -3,10 +3,6 @@ body {
   line-height: 1.8;
   color: #818181;
 }
- h1{
- font-size: 10px;
-}
-
 h2 {
   font-size: 24px;
   text-transform: uppercase;
@@ -21,47 +17,19 @@ h4 {
   font-weight: 400;
   margin-bottom: 30px;
 }
-
 .jumbotron {
- 
+  background-image: url('c.png');
+  background-repeat: no-repeat;
+  background-color: #f4511e;
   color: #fff;
-  padding: 200px 25px 0 25px;
+  padding: 100px 25px;
   font-family: Montserrat, sans-serif;
-  height: 1000px;
-  font-size: 70px;
-  background: url('fsa_.png') no-repeat center center fixed;
+  background-size: cover;
+ 
  
 }
-
-
-
-
-.jumbotron-image {
-  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-}
-
-
-  
-.top-bar{
-    background-color:#38b6ff;
-    text-align:center  ;
-    margin-bottom:30px;
-    height: 40px;
-    font-size:20px;
-    padding-top:5px;
-}
-
-
-
-
 .container-fluid {
   padding: 60px 50px;
-
 }
 .bg-grey {
   background-color: #f6f6f6;
@@ -143,38 +111,26 @@ h4 {
   color: #fff;
 }
 .navbar {
-  background-color: #f8f5f1;
+  margin-bottom: 0;
+  background-color: #f4511e;
   z-index: 9999;
   border: 0;
-  font-size: 20px !important;
+  font-size: 12px !important;
   line-height: 1.42857143 !important;
   letter-spacing: 4px;
   border-radius: 0;
   font-family: Montserrat, sans-serif;
-  height: 150px;
-  
 }
-.navbar li a, .navbar{
-  color: black !important;
- }
-
-.navbar-brand.navbar-image {
- padding: 0 20px 0 0;
-
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
 }
-.navbar-nav li a:hover {
-  color: white !important;
-  background-color: #38b6ff!important;
-}
-
-.navbar-nav li.active a {
-    color: white !important;
-    background-color: #38b6ff !important;
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: #f4511e !important;
+  background-color: #fff !important;
 }
 .navbar-default .navbar-toggle {
-  border-color: grey;
+  border-color: transparent;
   color: #fff !important;
-  height:40px;
 }
 footer .glyphicon {
   font-size: 20px;
@@ -209,6 +165,15 @@ footer .glyphicon {
     -webkit-transform: translateY(0%);
   }
 }
+
+@media screen and (min-width:1000px){
+    .jumbotron{
+        background-image: url('j.png');
+        
+    }
+}
+
+
 @media screen and (max-width: 768px) {
   .col-sm-4 {
     text-align: center;
@@ -219,6 +184,19 @@ footer .glyphicon {
     margin-bottom: 35px;
   }
 }
+
+
+
+@media screen and (max-width: 600px) {
+    .jumbotron{
+        background-image: url('fs_o.png');
+    }
+}
+
+
+
+
+
 @media screen and (max-width: 480px) {
   .logo {
     font-size: 150px;
@@ -226,63 +204,5 @@ footer .glyphicon {
 }
 
 
-
-
-@media (max-width: 1100px) {
-  .navbar-header {
-      float: none;
-      padding: 0 30px 0 0;
-  }
-
-  .navbar-toggle {
-      display: block;
-     
-  }
-
-  .navbar-collapse {
-      border-top: 1px solid transparent;
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-      
-     
-  }
-
-  .navbar-collapse.collapse {
-      display: none !important;
-      padding: 0 20px 0 0;
-  }
-
-  .navbar-nav {
-      float: none !important;
-      margin: 7.5px -15px;
-  }
-
-  .navbar-nav>li {
-      float: none;
-  }
-
-  .navbar-nav>li>a {
-      padding-top: 10px;
-      padding-bottom: 10px;
-  }
-
-  .navbar-text {
-      float: none;
-      margin: 15px 0;
-  }
-  .navbar-brand.navbar-image {
-   padding: 0 0 0 40px;
-
-  }
-
-  /* since 3.1.0 */
-  .navbar-collapse.collapse.in {
-      display: block !important;
-  }
-
-  .collapsing {
-      overflow: hidden !important;
-     
-  }
-}
 
 
