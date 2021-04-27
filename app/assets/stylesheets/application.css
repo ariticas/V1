@@ -190,6 +190,8 @@ footer .glyphicon {
 @media screen and (max-width: 600px) {
     .jumbotron{
         background-image: url('fs_o.png');
+        margin-top:10px;
+        height: 400px;
     }
 }
 
