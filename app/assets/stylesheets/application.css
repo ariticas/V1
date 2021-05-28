@@ -1,3 +1,7 @@
+
+
+
+
 body {
   font: 400 15px Lato, sans-serif;
   line-height: 1.8;
@@ -17,20 +21,51 @@ h4 {
   font-weight: 400;
   margin-bottom: 30px;
 }
-.jumbotron {
-  background-image: url('c.png');
-  background-repeat: no-repeat;
-  background-color: #f4511e;
-  color: #fff;
-  padding: 100px 25px;
-  font-family: Montserrat, sans-serif;
-  background-size: cover;
- 
- 
+
+.b{
+    margin-bottom:30px;
 }
+
+.round{
+   padding-right:10px;
+    padding-left:10px;
+     font-size:20px;
+    border-radius:10px !important;
+}
+
+.top-right {
+  position: absolute;
+  top: 200px;
+  right: 16px;
+  font-size: 18px;
+}
+
+
+
+.carousel-caption{
+top:1000%;
+}
+.responsive{
+    height:auto;
+    width:100%;
+    opacity: 0.9;
+}
+
+
+
 .container-fluid {
   padding: 60px 50px;
 }
+
+ .under-hero-font{
+    font-size:34px;
+     .
+  }
+
+
+
+
+
 .bg-grey {
   background-color: #f6f6f6;
 }
@@ -110,18 +145,28 @@ h4 {
   background-color: #f4511e;
   color: #fff;
 }
+
+.navbar-brand{
+    font-size: 30px;
+    color: #fff !important;
+}
+
+
+
+
 .navbar {
   margin-bottom: 0;
-  background-color: #f4511e;
   z-index: 9999;
   border: 0;
-  font-size: 12px !important;
+  font-size: 20px !important;
   line-height: 1.42857143 !important;
   letter-spacing: 4px;
   border-radius: 0;
   font-family: Montserrat, sans-serif;
+  background: transparent;
+  border-color: transparent;
 }
-.navbar li a, .navbar .navbar-brand {
+.navbar li a, .navbar  {
   color: #fff !important;
 }
 .navbar-nav li a:hover, .navbar-nav li.active a {
@@ -166,10 +211,53 @@ footer .glyphicon {
   }
 }
 
-@media screen and (min-width:1000px){
-    .jumbotron{
-        background-image: url('j.png');
-        
+@media screen and (min-width: 1600px) {
+ 
+}
+
+@media (max-width: 900px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin: 7.5px -15px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar-text {
+        float: none;
+        margin: 15px 0;
+    }
+    /* since 3.1.0 */
+    .navbar-collapse.collapse.in {
+        display: block!important;
+    }
+    .collapsing {
+        overflow: hidden!important;
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .container-fluid + .container {
+        display:none;
     }
 }
 
@@ -183,28 +271,19 @@ footer .glyphicon {
     width: 100%;
     margin-bottom: 35px;
   }
+  .navbar-brand, .btn-group-vertical {
+     display:none;
+  }
+  
 }
-
-
-
-@media screen and (max-width: 600px) {
-    .jumbotron{
-        background-image: url('fs_o.png');
-        margin-top:10px;
-        height: 400px;
-    }
-}
-
-
-
-
 
 @media screen and (max-width: 480px) {
-  .logo {
-    font-size: 150px;
+    .navbar-brand{
+     display:none;
   }
+  
+ 
+  
+
+  
 }
-
-
-
-
