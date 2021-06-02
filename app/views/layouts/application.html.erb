@@ -37,8 +37,6 @@
   
       <!-- DONT FORGET TO INCLUDE SHIM FOR IE -->
 </head>
-
-
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <nav class="navbar navbar-default navbar-fixed-top bg-dark" style="padding-top:20px">
@@ -55,14 +53,13 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#portfolio">DOC-TRACKER</a></li>
+        <li><a href="#pricing">BLOG</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
 
 <!----Hero Section--->
  <div class="container-fluid" style="padding:0; position:relative;">
@@ -84,11 +81,8 @@
     </div>
   </div>
 
-
-
- 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid" style="">
+<div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
       <h2>About Company Page</h2><br>
@@ -293,8 +287,8 @@
   <div class="row">
     <div class="col-sm-5">
       <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Los Angeles, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span>323333434</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
       <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
     </div>
     <div class="col-sm-7 slideanim">
@@ -323,11 +317,10 @@
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p> Made By ManufacturedApps <a href="https://www.w3schools.com" title="Visit w3schools">www.manufacturedapps.com</a></p>
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
 
-
- <script>
+<script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -362,45 +355,9 @@ $(document).ready(function(){
     });
   });
 })
-
-
-
-function myFunction(x) {
-  if (x.matches) { // If media query matches
- 
-      document.getElementById("jumbotext").innerHTML = "";
-                     document.getElementById("logo").innerHTML = "Direct Family Solutions";
-                    
-
- 
-  } else {
-   
-   document.getElementById("jumbotext").innerHTML = "Direct Family Solutions";
-   document.getElementById("logo").innerHTML = "";
-
-
-  }
-}
-
-var x = window.matchMedia("(max-width: 600px)");
-
-myFunction(x) // Call listener function at run time
-
-x.addListener(myFunction) // Attach listener function on state changes
-
-  
-
-
-
-
-<script>
-var w = window.innerWidth;
-var h = window.innerHeight;
-
-var x = document.getElementById("demo");
-x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
 </script>
 
 </body>
 </html>
+
 
