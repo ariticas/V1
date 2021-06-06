@@ -6,11 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
  
     <!--------Google Fonts API Connection------>
@@ -65,11 +62,11 @@
 </nav>
 
 <!----Hero Section--->
- <div class="container-fluid" style="padding:0; position:relative;">
-  <img src="assets/102.png" alt="Nature" class="responsive" >
-   <div class="top-right">
-       <h1 class="hero-text text-center">Direct Family Solutions</h1>
-    <h1 class="hero-number text-center">1-818-832-8045</h1>
+ <div class="container-fluid small-hero" style="padding:0; position:relative;">
+  <img id="my-img" src="assets/102.png"  alt="Nature" class="responsive ">
+   <div class="top-right text-center">
+       <h1 class="hero-text ">Direct Family Solutions</h1>
+    <h1 class="hero-number ">1-818-832-8045</h1>
      <div class = "btn-group-vertical">
       <button type="button" class=" btn  btn-warning btn-lg ">Clients</button>
       <button type="button" class=" btn btn-primary  btn-lg ">Request Assistance</button>
@@ -361,20 +358,13 @@ $(document).ready(function(){
   });
 })
 
-
+var x = window.matchMedia("(max-width: 1200px)");
 function myFunction(x) {
   if (x.matches) { // If media query matches
- 
-         document.getElementById("top-number").innerHTML = "1800-832-8045";
-                     
-                    
-
- 
-  } else {
-   
-   document.getElementById("jumbotext").innerHTML = "Direct Family Solutions";
-   document.getElementById("logo").innerHTML = "";
-
+ document.getElementById("top-number").innerHTML = "1800-832-8045";
+ document.getElementById("my-img").src = "assets/hero.png";
+    } else {
+document.getElementById("my-img").src = "assets/102.png";
 
   }
 }
@@ -384,8 +374,6 @@ var x = window.matchMedia("(max-width: 1200px)");
 myFunction(x) // Call listener function at run time
 
 x.addListener(myFunction) // Attach listener function on state changes
-
-
 
 
 

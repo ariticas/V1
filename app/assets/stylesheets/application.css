@@ -48,10 +48,13 @@ h4 {
   right: 27%;
   font-size: 18px;
 }
-
+.jumbotron{
+    background-image:url('102.png')
+}
 .responsive{
     height:auto;
     width:100%;
+    
    /* opacity: 0.9;*/
 }
 
@@ -144,7 +147,7 @@ h4 {
 }
 .navbar-brand{
     color: #fff !important;
-    font-size:40px;
+    font-size:120%;
     
 }
 .navbar {
@@ -164,9 +167,7 @@ h4 {
 .navbar li a, .navbar {
   color: #fff !important;
 }
-.navbar-nav > li{
 
-}
 .navbar-nav li a:hover, .navbar-nav li.active a {
   color: #fff !important;
   background-color:gray !important;
@@ -277,8 +278,19 @@ footer .glyphicon {
      display:none;
   }
 
-  
-  
+   
+   @media screen and (max-width: 480px) {
+      
+      .small-hero{
+          margin-top:60px;
+      }
+       .navbar-brand{
+           font-size:100%;
+       }
+       
+       .under-hero-font{
+           font-size:200%;
+       }
 }
 
 
