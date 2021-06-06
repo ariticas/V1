@@ -48,9 +48,7 @@ h4 {
   right: 27%;
   font-size: 18px;
 }
-.jumbotron{
-    background-image:url('102.png')
-}
+
 .responsive{
     height:auto;
     width:100%;
@@ -60,7 +58,6 @@ h4 {
 
 .under-hero-font{
    font-size:34px;
-    
 }
 
 .container-fluid {
@@ -277,8 +274,16 @@ footer .glyphicon {
    .btn-group-vertical, .hero-number,.hero-text {
      display:none;
   }
+  
+}
+@media screen and (min-width: 480px) {
+    .b480p{
+        display:none;
+    }
 
-   
+}
+
+
    @media screen and (max-width: 480px) {
       
       .small-hero{
@@ -290,6 +295,10 @@ footer .glyphicon {
        
        .under-hero-font{
            font-size:200%;
+       }
+       
+       .a480p{
+        display:none;
        }
 }
 
