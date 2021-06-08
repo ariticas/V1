@@ -4,6 +4,9 @@ body {
   line-height: 1.8;
   color: #818181;
 }
+h1{
+    font-size: 40px;
+}
 h2 {
   font-size: 24px;
   text-transform: uppercase;
@@ -18,6 +21,7 @@ h4 {
   font-weight: 400;
   margin-bottom: 30px;
 }
+
 .round{
    padding-right:10px;
     padding-left:10px;
@@ -61,17 +65,18 @@ h4 {
 }
 
 .container-fluid {
+  border-top:solid;
   padding: 60px 50px;
 }
 .bg-grey {
   background-color: #f6f6f6;
 }
 .logo-small {
-  color: #f4511e;
+  color: #007bff;
   font-size: 50px;
 }
 .logo {
-  color: #f4511e;
+  color:#007bff;
   font-size: 200px;
 }
 .thumbnail {
