@@ -73,11 +73,11 @@ h4 {
   background-color: #f6f6f6;
 }
 .logo-small {
-  color: #007bff;
+  color: #1e90ff;
   font-size: 50px;
 }
 .logo {
-  color:#007bff;
+  color:#1e90ff;
   font-size: 200px;
 }
 .thumbnail {
@@ -119,7 +119,7 @@ h4 {
   font-style: normal;
 }
 .panel {
-  border: 1px solid #f4511e;
+  border: 1px solid gray;
   border-radius:0 !important;
   transition: box-shadow 0.5s;
 }
@@ -127,13 +127,13 @@ h4 {
   box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 }
 .panel-footer .btn:hover {
-  border: 1px solid #f4511e;
+  border: 1px solid gray;
   background-color: #fff !important;
   color: #f4511e;
 }
 .panel-heading {
   color: #fff !important;
-  background-color: #f4511e !important;
+  background-color: #007bff !important;
   padding: 25px;
   border-bottom: 1px solid transparent;
   border-top-left-radius: 0px;
@@ -152,8 +152,9 @@ h4 {
   font-size: 14px;
 }
 .panel-footer .btn {
+    
   margin: 15px 0;
-  background-color: #f4511e;
+  background-color: #007bff;
   color: #fff;
 }
 .navbar-brand{
@@ -304,7 +305,7 @@ footer .glyphicon {
 
    @media screen and (max-width: 480px) {
       
-      
+     
        .navbar-brand{
            font-size:100%;
        }
