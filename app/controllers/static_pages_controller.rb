@@ -1,4 +1,5 @@
 class StaticPagesController < ApplicationController
+    skip_before_action :authenticate_user!, :only => [:home,:about,:services,:blog,:contact]
   def home
   end
 
@@ -13,4 +14,5 @@ class StaticPagesController < ApplicationController
 
   def contact
   end
+  
 end
