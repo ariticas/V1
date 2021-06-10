@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!--  Direct Family Solutions -->
+  <!--  Direct Family Services -->
   <title>Direct Family Solutions</title>
       
     <link rel="shortcut href="assets/j.png" >
@@ -11,10 +11,19 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
+></script>
   
   
    <!--------Google Fonts API Connection------>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    
     
     
     
@@ -26,6 +35,7 @@
     
 <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
   <!----------Rails Stuff------------->
+   
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all',
@@ -44,74 +54,55 @@
   
   
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-<nav class="navbar navbar-default navbar-fixed-top bg-dark" >
-   
-  <div class="container">
-    
-  <div class="navbar-header">
-      <a id="logo" class="navbar-brand" href="#myPage">1-818-832-8045</a>
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      </div>
-   
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">DOC-TRACKER</a></li>
-        <li><a href="#pricing">BLOG</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<%=render 'layouts/header'%>
 <!----Hero Section--->
  <div class="container-fluid " style="padding:0; position:relative;">
-  <img id="my-img" src="assets/102.png"  alt="Nature" class="responsive a480p"/>
+  <img id="my-img" src="assets/hero10.png"  alt="Nature" class="responsive a480p"/>
     <img id="my-img" src="assets/hero_90.png"  alt="Nature" class="responsive b480p"/>
    <div class="top-right text-center">
-       <h1 class="hero-text ">Direct Family Solutions</h1>
+       <h1 class="hero-text ">Direct Family Services</h1>
     <h1 class="hero-number ">1-818-832-8045</h1>
      <div class = "btn-group-vertical">
-      <button type="button" class=" btn  btn-warning btn-lg ">Clients</button>
-      <button type="button" class=" btn btn-primary  btn-lg ">Request Assistance</button>
+            <button type="button" class=" btn btn-primary">Request Assistance</button>
     </div>
    </div>
  </div>
 
 <!--------smaller screen sign in section----->
         <div class = "container">
-        <p class="text-nowrap text-center under-hero-font" style="color:black"><b>Direct Family Solutions</b></p>
+        <p class="text-nowrap text-center under-hero-font" style="color:black"><b>Direct Family Services</b></p>
         <div class="container"  >
-       <button type="button" class=" btn btn-warning btn-lg btn-block">Clients</button>
      <button type="button" class=" btn btn-primary btn-lg btn-block">Request Assistance</button>
     </div>
   </div>
 
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+<div id="about" class="container-fluid" ">
   <div class="row">
     <div class="col-sm-8">
-      <h2>AFFORDABLE AND ACCESSIBLE FAMILY LAW HELP </h2><br>
+      <h1 style="font-size:30px">AFFORDABLE AND ACCESSIBLE FAMILY LAW HELP </h1>
+      <h2 style="border-bottom:solid;padding-bottom:20px;">Document preparation experts</h2>
+      <br>
+      
       <h4>Direct Family Solutions connects legal professionals to families in need of family law help. Our legal team of experts combine their experience along with their technical abilities to help you navigate the complex and often times bumpy road that family law may pose. Our team of engineers build and maintain our systems that ensure your documents along with all of their required notation move along our  document pipeline free of any hiccups. While case administrators/managers provide emotional well-being and support as well as answer all of your questions and concerns. </h4><br>
       <p></p>
       <br><button class="btn btn-default btn-lg">Get in Touch</button>
     </div>
-    <div class="col-sm-4" >
-           <img id="my-img" src="assets/lcd.png"  alt="Nature" class="responsive">
+    <div class="col-sm-4 side"  >
+         <span class="material-icons" style="font-size:300px;padding-left:60px;">
+account_balance
+</span>
     </div>
   </div>
 </div>
 
 
 <!-- Container (Resources Section) -->
-<div id="services" class="container-fluid text-center assistance">
+<div id="services" class="container-fluid text-center assistance" >
   <h1>WHAT WE BELIEVE IN</h1>
   <h2>How we offer it</h2>
   <br>
@@ -120,12 +111,12 @@
       <span class="glyphicon glyphicon-hand-right
  logo-small"></span>
       <h4>GUIDANCE</h4>
-      <p>Your case manager will guide you step by step,from initial consultation to judgement. Case administrators guide you through the famliy legal process by answering all questions as well as compile all of the necessary information for the legal staff.</p>
+      <p>Your case manager will guide you step by step, beggining with the initial consultation and ending with final judgement. Case administrators guide you through the famliy legal process by ensuring  that all of your questions are answered as well as adressing any concerns. Case  compile all of the necessary information for the legal staff.</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-briefcase logo-small"></span>
       <h4>PACKAGED SOLUTIONS</h4>
-      <p>Direct Family Solutions is a one stop shop for all of your family law document and filing needs. We offer packaged solutions that are time efficient and far more cost effective than traditional law firms.</p>
+      <p>Direct Family Services is a one stop shop for all of your family law document and filing needs. We offer packaged solutions that are time efficient and far more cost effective than traditional law firms.</p>
     </div>
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-wrench logo-small"></span>
@@ -136,7 +127,7 @@
   <br><br>
   <div class="row ">
     <div class="col-sm-6">
-      <span class="glyphicon glyphicon-phone-alt logo-small"></span>
+      <span class="glyphicon glyphicon-earphone logo-small"></span>
       <h4>CONSTANT CONTACT</h4>
       <p>Communication is Key! We believe in constant-contact with our clients,so we've desisgned a system that allows us to do just that.Our Doc-Tracker allows you track your documents 24/7 eliminating concern about their status.While Case managers provide updates from the legal staff as they happen. </p>
     </div>
@@ -150,12 +141,12 @@
 </div>
 
 <!-- Container (Services) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div id="portfolio" class="container-fluid text-center "style="background-color:#9bb7d4;">
   <h1>WE PREPARE DOCUMENTS FOR</h1><br>
   
   <div class="row text-center slideanim">
       <div class="col-lg-4">
-      <a href="#"> <div class="thumbnail" >
+      <a href="#"> <div class="thumbnail">
       <h1 class="centered" style="top:20%">CHILD CUSTODY</h1>
       <img src="assets/childcustody.png"  class="img-rounded" alt="San Francisco" width="200" height="100"  >
        </div></a>
@@ -192,18 +183,18 @@
        </div>
     
              <div class="col-lg-4">
-         <a href="#">  <div class="thumbnail" >
+         <a href="#">  <div class="thumbnail bg-image hover-overlay ripple shadow-1-strong rounded" >
         <h1 class="centered" style="top:8%; left:40%;color:black;">ADOPTION</h1>
       <img src="assets/adoption.png" class="img-rounded" alt="San Francisco" width="200" height="100"  >
        </div></a>
        </div>
   </div>
   
+  </div>
   
-  
-  <br>
-  
-  <h2>What our customers say</h2>
+
+  <div class = "container-fluid">
+  <h2 class="text-center">What our customers say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -245,9 +236,8 @@
 <!-- Container (Plans Section) -->
 <div id="pricing" class="container-fluid">
   <div class="text-center">
-    <h1>Document Preparation Plans</h1>
-    <h2>Just documents or include filiing</h2>
-  </div>
+    <h1 style="margin-bottom:40px;padding-bottom:60px;">Document Preparation Options</h1>
+ </div>
   <div class="row slideanim">
     <div class="col-sm-6 col-xs-12">
       <div class="panel panel-default text-center" >
@@ -255,10 +245,10 @@
           <h1 style="color:#fff;">Documents</h1>
         </div>
         <div class="panel-body">
-          <h4><strong>-</strong> Access to online platform</h4>
-          <h4><strong>-</strong>Case Manager </h4>
-          <h4 ><strong>-</strong> Documents Prepared</h4>
-          <h4 ><strong>-</strong> -</h4>
+          <h4><strong>- </strong>Access to online platform</h4>
+          <h4><strong>- </strong>Case Manager </h4>
+          <h4 ><strong>- </strong>Documents Prepared</h4>
+          <h4 ><strong>- </strong>-</h4>
         </div>
         <div class="panel-footer">
         <button class="btn btn-lg">Learn More</button>
@@ -268,14 +258,14 @@
     <div class="col-sm-6 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1 style="color:#fff;">Include Filing</h1>
+          <h1 style="color:#fff;">Documents + Filing</h1>
         </div>
         
                 <div class="panel-body">
-          <h4><strong>-</strong> Access to online platform</h4>
-          <h4><strong>-</strong>Case Manager </h4>
-          <h4><strong>-</strong> Documents Prepared</h4>
-         <h4 ><strong>-</strong> Documents filed</h4>
+          <h4><strong>-  </strong>Access to online platform</h4>
+          <h4><strong>- </strong>Case Manager </h4>
+          <h4><strong>- </strong>Documents Prepared</h4>
+         <h4 ><strong>- </strong>Documents filed</h4>
           </div>
         <div class="panel-footer">
         <button class="btn btn-lg">Learn More</button>
@@ -301,12 +291,20 @@
     <div class="col-sm-7 slideanim">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name"rows="2" name="name" placeholder="Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+          <input class="form-control" id="telephone" rows="2" name="telephone" placeholder="Telephone" type="telephone" required>
         </div>
       </div>
+      
+      <div class="row">
+              <div class="col-sm-12 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" rows="2" type="text" required>
+        </div>
+      </div>
+      
+      
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
