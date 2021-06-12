@@ -1,0 +1,22 @@
+<% provide(:title, "Log in") %>
+ 
+ <div class ="container-fluid">
+   <h1 class="text-center">Client Login</h1>
+ <div class="row">
+   <div class="col-md-6 col-md-offset-3">
+     <%= form_with(url: login_path, scope: :session, local: true) do |f| %>
+    
+     <%= f.label :email %>
+     <%= f.email_field :email, class: 'form-control' %>
+    
+     <%= f.label :password %>
+     <%= f.password_field :password, class: 'form-control' %>
+    <div  style="padding-top:10px;">
+     <%= f.submit "Log in", class: "btn btn-primary" %>
+         </div>
+  <% end %>
+  
+   <h4 style="padding-top:10px;margin:0px">Need help with family law documents? <%= link_to "Learn more now!", "#" %></h4>
+   </div>
+ </div>
+</div>

@@ -17,7 +17,8 @@ gem 'turbolinks',                 '5.2.1'
 gem 'jbuilder',                   '2.10.0'
 gem 'bootsnap',                   '1.7.2', require: false
 gem 'devise'
-gem 'rails_admin', '~> 2.0'
+gem 'rails_admin',                '2.0.2 '
+gem 'cancancan'
 
 
 group :development, :test do

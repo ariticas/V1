@@ -1,8 +1,18 @@
 class UsersController < ApplicationController
-  
-  def login
-  end
-  
-  def profile
-  end
+ 
+
+ 
+ 
+ def show
+     @user = User.find(params[:id])
+ end
+ 
+ 
+ def new
+     @user = User.new
+ end
+
+def create
+    render 'new'
+    end
 end
