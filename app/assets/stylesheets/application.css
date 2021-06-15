@@ -193,22 +193,24 @@ h4 {
   letter-spacing: 4px;
   border-radius: 0;
   font-family: Montserrat, sans-serif;
-  background-color: rgba(60, 60, 60, 0.5);
+  background-color: #fff;
   border-color: transparent;
   opacity:2.0;
+  
 }
 .navbar li a, .navbar {
-  color: #fff !important;
+  color: #0072b5;!important;
 }
 
 .navbar-nav li a:hover, .navbar-nav li.active a {
   color: #fff !important;
   background-color:gray !important;
 }
-.navbar-default .navbar-toggle {
+.navbar-toggle {
   border-color: transparent;
   color: #fff !important;
-  background-color:#0072b5;
+
+  
 }
 footer .glyphicon {
   font-size: 20px;
@@ -274,7 +276,7 @@ footer .glyphicon {
     }
     .navbar-toggle {
         display: block;
-        background-color:#fff!important;
+        background-color:#0072b5; !important;
     }
   
     .navbar-collapse {
@@ -288,10 +290,14 @@ footer .glyphicon {
     .navbar-nav {
         float: none!important;
         margin: 7.5px -15px;
-        background-color:gray;
+        background-color:white;
+      
+      
     }
     .navbar-nav>li {
         float: none;
+
+       
     }
     .navbar-nav>li>a {
         padding-top: 10px;
@@ -307,6 +313,9 @@ footer .glyphicon {
     }
     .collapsing {
         overflow: hidden!important;
+    }
+    .icon-bar{
+        background-color:#fff;
     }
 }
 
@@ -365,5 +374,4 @@ footer .glyphicon {
         display:none;
        }
 }
-
 
